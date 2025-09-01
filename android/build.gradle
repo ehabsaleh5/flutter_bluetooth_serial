@@ -19,7 +19,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 android {
     compileSdkVersion 30
-     namespace = "com.kiwi.flutterscanbluetooth"
+     namespace = "io.github.edufolly.flutterbluetoothserial"
        compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
         targetCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
