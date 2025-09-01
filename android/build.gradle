@@ -19,10 +19,17 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 android {
     compileSdkVersion 30
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+     namespace = "com.kiwi.flutterscanbluetooth"
+       compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
+        targetCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
     }
+
+ kotlinOptions {
+        jvmTarget = "17"
+    }
+
+   
     defaultConfig {
         minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
